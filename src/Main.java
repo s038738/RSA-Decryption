@@ -12,7 +12,7 @@ public class Main {
         int pubkey = 2;
 
         BigInteger p = BigInteger.probablePrime(32, rand1);
-        BigInteger q = BigInteger.probablePrime(32, rand1);
+        BigInteger q = BigInteger.probablePrime(32, rand2);
 
         BigInteger n = p.multiply(q);
 
@@ -56,17 +56,6 @@ public class Main {
                     "\nCyphered text: "+ cipherVal +
                                 "\nDecyphered text: " + Character.toString((char)i_decypherVal));
 
-
-
-
-
-
-
-
         }
-
-
-
     }
-
 }
